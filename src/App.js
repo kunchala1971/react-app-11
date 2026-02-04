@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 import ImageContainer from "./ImageContainer";
-export const GlobalAppContext = createContext();
+import { GlobalAppContext } from "./hooks/useGlobalAppContext";
 const App = () => {
   const [toggle, setToggle] = useState(true);
   const store = {
@@ -10,7 +10,7 @@ const App = () => {
     },
     toggle,
     setToggle,
-    appname: "Global App Context",
+    appname: "TELUGU IT TUTORIALS",
   };
   return (
     <>
